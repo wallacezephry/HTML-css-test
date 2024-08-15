@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    
+        .destaque {
+            background-color: red;
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+        
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Marcia</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Luiz</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Encanador</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>M</td>
+            <td>51</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Maisa</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Atriz</td>
+        </tr>
+    </table>
+</body>
+</html>
